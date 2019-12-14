@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.gmail.user.mapper.UserMapper">
+    <select id="getAllUser" resultType="com.example.gmail.user.bean.Shinyu_Users">
+        select u.* from Shinyu_Users as u
+    </select>
+
+</mapper>
