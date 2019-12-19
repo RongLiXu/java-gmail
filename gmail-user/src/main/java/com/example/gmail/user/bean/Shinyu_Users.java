@@ -16,6 +16,30 @@ private int Id;
  private String Email;
  private String LastIP;
  private Timestamp LastTime;
+
+ @Override
+ public String toString() {
+  return "Shinyu_Users{" +
+          "Id=" + Id +
+          ", LoginName='" + LoginName + '\'' +
+          ", LoginPwd='" + LoginPwd + '\'' +
+          ", LoginSecret='" + LoginSecret + '\'' +
+          ", UserType=" + UserType +
+          ", Gender=" + Gender +
+          ", NickName='" + NickName + '\'' +
+          ", UserPhoto='" + UserPhoto + '\'' +
+          ", UserQQ='" + UserQQ + '\'' +
+          ", Phone='" + Phone + '\'' +
+          ", Email='" + Email + '\'' +
+          ", LastIP='" + LastIP + '\'' +
+          ", LastTime=" + LastTime +
+          ", UserFrom=" + UserFrom +
+          ", Status=" + Status +
+          ", DataFlag=" + DataFlag +
+          ", CreateTime=" + CreateTime +
+          '}';
+ }
+
  private int UserFrom;
  private int Status;
  private int DataFlag;
