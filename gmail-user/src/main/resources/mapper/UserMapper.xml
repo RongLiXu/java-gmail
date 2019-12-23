@@ -7,4 +7,10 @@
         select u.* from Shinyu_Users as u
     </select>
 
+    <select id="getUserRoleById" resultType="com.example.gmail.user.bean.Shinyu_Roles">
+        select Id,RoleName,RoleDesc,Privlileges,DataFlag,CreateTime
+        from Shinyu_Roles
+        where Id in(select Id from Shinyu_Users u where u=#{uid})
+    </select>
+
 </mapper>

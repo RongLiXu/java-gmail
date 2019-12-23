@@ -1,21 +1,45 @@
 package com.example.gmail.user.bean;
 
+import org.apache.ibatis.annotations.Mapper;
+
+import javax.persistence.*;
 import java.sql.Timestamp;
 
+@Table(name = "Shinyu_Users")
 public class Shinyu_Users {
-private int Id;
+ // 主鍵
+ @Id
+ // 主鍵返回策略
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+ private int Id;
+ @Column(name = "LoginName")
  private String LoginName;
+ @Column(name = "LoginPwd")
  private String LoginPwd;
+ @Column(name = "LoginSecret")
  private String LoginSecret;
+ @Column(name = "UserType")
  private int UserType;
  private int Gender;
+ @Column(name = "NickName")
  private String NickName;
+ @Column(name = "UserPhoto")
  private String UserPhoto;
+ @Column(name = "UserQQ")
  private String UserQQ;
  private String Phone;
  private String Email;
+ @Column(name = "LastIP")
  private String LastIP;
+ @Column(name = "LastTime")
  private Timestamp LastTime;
+ @Column(name = "UserFrom")
+ private int UserFrom;
+ private int Status;
+ @Column(name = "DataFlag")
+ private int DataFlag;
+ @Column(name = "CreateTime")
+ private Timestamp CreateTime;
 
  @Override
  public String toString() {
@@ -39,11 +63,6 @@ private int Id;
           ", CreateTime=" + CreateTime +
           '}';
  }
-
- private int UserFrom;
- private int Status;
- private int DataFlag;
- private Timestamp CreateTime;
 
  public int getId() {
   return Id;
