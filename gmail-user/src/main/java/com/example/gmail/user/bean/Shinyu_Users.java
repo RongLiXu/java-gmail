@@ -9,8 +9,8 @@ import java.sql.Timestamp;
 public class Shinyu_Users {
  // 主鍵
  @Id
- // 主鍵返回策略
- @GeneratedValue(strategy = GenerationType.IDENTITY)
+// // 主鍵返回策略
+// @GeneratedValue(strategy = GenerationType.IDENTITY)
  private int Id;
  @Column(name = "LoginName")
  private String LoginName;
