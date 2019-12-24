@@ -1,7 +1,7 @@
 package com.example.gmail.user.mapper;
 
 
-import com.example.gmail.user.bean.Shinyu_Users;
+import com.shinyu.gmall.bean.Shinyu_Users;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

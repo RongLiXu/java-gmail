@@ -1,11 +1,10 @@
 package com.example.gmail.user.controller;
 
-import com.example.gmail.user.bean.Shinyu_Roles;
-import com.example.gmail.user.bean.Shinyu_Users;
-import com.example.gmail.user.service.UserService;
+import com.shinyu.gmall.bean.Shinyu_Roles;
+import com.shinyu.gmall.bean.Shinyu_Users;
+import com.shinyu.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 

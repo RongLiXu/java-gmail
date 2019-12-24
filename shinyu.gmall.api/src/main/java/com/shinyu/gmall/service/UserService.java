@@ -1,7 +1,7 @@
-package com.example.gmail.user.service;
+package com.shinyu.gmall.service;
 
-import com.example.gmail.user.bean.Shinyu_Roles;
-import com.example.gmail.user.bean.Shinyu_Users;
+import com.shinyu.gmall.bean.Shinyu_Roles;
+import com.shinyu.gmall.bean.Shinyu_Users;
 
 import java.util.List;
 

@@ -1,13 +1,12 @@
 package com.example.gmail.user.service.impl;
 
-import com.example.gmail.user.bean.Shinyu_Roles;
-import com.example.gmail.user.bean.Shinyu_Users;
 import com.example.gmail.user.mapper.Shinyu_RolesMapper;
 import com.example.gmail.user.mapper.UserMapper;
-import com.example.gmail.user.service.UserService;
+import com.shinyu.gmall.bean.Shinyu_Roles;
+import com.shinyu.gmall.bean.Shinyu_Users;
+import com.shinyu.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
